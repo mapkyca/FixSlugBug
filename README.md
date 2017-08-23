@@ -16,6 +16,7 @@ listing and referencing, since getURL() will always create a link which addresse
 ## Usage
 
 * Install the plugin in the usual way
+* BACK UP YOUR DATABASE!
 * Either visit https://yoursite.com/admin/slugbug
 * Or run the console application fix-slugbug
 
