@@ -98,7 +98,7 @@
 		    
 		    $item = null;
 		}
-		exit;
+		
 		$items = null;
 		gc_collect_cycles();
 		
