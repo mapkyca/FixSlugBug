@@ -22,16 +22,13 @@
             $this->adminGatekeeper();
 	    set_time_limit(0);
 	    
-	    $dryrun = $this->getInput('dryrun', false);
+	    $dryrun = $this->getInput('dryrun', true);
 	    if (!empty($dryrun)) $dryrun = true;
 	    
-	    ob_start();
+	    echo "<pre>";
 	    \IdnoPlugins\FixSlugBug\Main::fix1864($dryrun);
-	    $out = ob_get_clean();
+	    echo "</pre>";
 	    
-	    header('Content-Type: text/plain');
-	    
-	    echo $out;
 	    
 	    exit;
         }
