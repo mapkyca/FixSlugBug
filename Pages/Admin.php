@@ -20,6 +20,7 @@
         function postContent()
         {
             $this->adminGatekeeper();
+	    set_time_limit(0);
 	    
 	    $dryrun = $this->getInput('dryrun', false);
 	    if (!empty($dryrun)) $dryrun = true;
