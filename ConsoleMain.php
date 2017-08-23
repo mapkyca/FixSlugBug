@@ -1,6 +1,6 @@
 <?php
 
-namespace IdnoPlugins\KQED2 {
+namespace IdnoPlugins\FixSlugBug {
 
     class ConsoleMain extends \Idno\Common\ConsolePlugin {
 
