@@ -22,7 +22,7 @@
             $this->adminGatekeeper();
 	    set_time_limit(0);
 	    
-	    $dryrun = $this->getInput('dryrun', true);
+	    $dryrun = $this->getInput('dryrun');
 	    if (!empty($dryrun)) $dryrun = true;
 	    
 	    echo "<pre>";
