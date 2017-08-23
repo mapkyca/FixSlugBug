@@ -29,7 +29,9 @@
 	    \IdnoPlugins\FixSlugBug\Main::fix1864($dryrun);
 	    $out = ob_get_clean();
 	    
-	    echo "<pre>$out</pre>";
+	    header('Content-Type: text/plain');
+	    
+	    echo $out;
 	    
 	    exit;
         }
