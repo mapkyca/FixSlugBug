@@ -4,7 +4,7 @@
 
     <div class="col-md-10 col-md-offset-1">
         <?= $this->draw('admin/menu') ?>
-        <h1>Course Group ID reset</h1>
+        <h1>Fix SlugBug</h1>
     </div>
 
 </div>
@@ -21,7 +21,7 @@
 
                 <p>
                     <label class="control-label" for="domain">Dry run and review changes?</label>
-                    <input type="checkbox"  class="form-control" name="dryrun" value="true" >
+                    <input type="checkbox"  class="form-control" name="dryrun" value="true" checked >
                 </p>
                 
             </div>
