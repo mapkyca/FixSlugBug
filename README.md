@@ -13,6 +13,11 @@ E.g.
 Bob's post is given the same slug as Alice's post since he can't see it during creation. This leads to much hilarity during
 listing and referencing, since getURL() will always create a link which addresses the newest post.
 
+This tool also checks for a possible interaction between #1864 and an older bug #1741 (https://github.com/idno/Known/issues/1741), where
+under these circumstances it is possible to have two entities with duplicate UUIDs.
+
+There is unfortunately no automated way of fixing this issue, but this tool should at least detect them.
+
 ## Usage
 
 * Install the plugin in the usual way
